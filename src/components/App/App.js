@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { getNews } from '../../apiCalls';
 import Header from '../Header/Header';
 import ArticleList from '../ArticleList/ArticleList';
+import { Switch, Route } from 'react-router-dom';
 
 const App = () => {
 
@@ -20,7 +21,11 @@ const App = () => {
   return (
     <div className="App">
       <Header/>
-      <ArticleList topStories={topStories}/>
+      <Switch>
+        <Route exact path='/'>
+          <ArticleList topStories={topStories}/>
+        </Route>
+      </Switch> 
     </div>
   );
 }
