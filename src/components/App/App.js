@@ -7,15 +7,14 @@ const App = () => {
 
   const [homePage, setHomePage] = useState([])
   
-  useEffect(() => {
-    getNews()
-      .then(news => setHomePage(news.results))
-  })
+  // useEffect(() => {
+  //   getNews()
+  //     .then(news => setHomePage(news.results))
+  // })
 
   return (
     <div className="App">
       <Header/>
-      {homePage.map()}
     </div>
   );
 }
