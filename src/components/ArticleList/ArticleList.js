@@ -11,7 +11,6 @@ const ArticleList = ({ topStories }) => {
                         <img className='thumbnail' src={story.multimedia[0].url} alt=''/>
                         <p>{story.title}</p>
                         <p>{story.published_date}</p>
-
                     </Link>
                 )
             })}
