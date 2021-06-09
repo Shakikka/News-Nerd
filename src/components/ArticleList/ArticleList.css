@@ -3,7 +3,11 @@
     width: 200px;
 }
 
-ArticleList {
+/* ArticleList {
     display: grid;
     grid-template: repeat(auto) / repeat(auto);
+} */
+
+a {
+    text-decoration: none;
 }
