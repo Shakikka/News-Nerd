@@ -1,0 +1,27 @@
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 150px;
+    align-self: center;
+    align-items: center;
+}
+
+.search {
+    font-family: 'Viaoda Libre', cursive;
+    font-weight: bolder;
+    height: 30px;
+    outline: none;
+    border: solid #3fefff;
+    background: #3fefff;
+}
+
+.button {
+    font-family: 'Viaoda Libre', cursive;
+    font-weight: bolder;
+    width: 70px;
+    margin: 10px;
+    border: none;
+    background: #3fefff;
+    cursor: pointer;
+}
