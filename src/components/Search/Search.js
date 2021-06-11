@@ -31,7 +31,7 @@ const Search = ({ searchArticles, setFilteredArticles }) => {
                 value={searchTerm}
                 onChange={handleChange}
             />
-            <button onClick={handleSubmit}>Clear</button>
+            <button className='button' onClick={handleSubmit}>Show All</button>
         </form>
     )
 }

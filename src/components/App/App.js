@@ -14,12 +14,17 @@ const App = () => {
   const [filteredArticles, setFilteredArticles] = useState([])
   
   useEffect(() => {
+    gatherArticles()
+  }, [])
+
+  const gatherArticles = () => {
     getNews()
       .then(news => {
         setTopStories(news.results)
+        console.log(news.results)
       })
       .catch(error => console.log(error))
-  }, [])
+  }
 
   const findArticle = title => {
     const foundArticle = topStories.find(story => story.title === title)
@@ -55,6 +60,8 @@ const App = () => {
             by={foundArticle.byline}
             abstract={foundArticle.abstract}
             url={foundArticle.url}
+            // gatherArticles={gatherArticles}
+            // findArticle={findArticle}
             />
         </Route>
       </Switch> 

@@ -1,8 +1,20 @@
 import './ArticleDetails.css';
 import { IoArrowBackCircle } from "react-icons/io5";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
-const ArticleDetails = ({ image, caption, title, by, abstract, url, publishDate }) => {
+const ArticleDetails = ({ image, caption, title, by, abstract, url, publishDate, gatherArticles, findArticle }) => {
+
+    // const location = useLocation().pathname.split('_').join(' ').split('/')[1]
+    // console.log(location)
+
+    // useEffect(() => {
+    //     gatherArticles()
+    // }, [])
+    // if (!abstract) {
+
+    // }
+
     return (
         <div className='details-card'>
             <Link to='/' className='back-button'>
