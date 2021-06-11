@@ -14,7 +14,7 @@ const ArticleList = ({ topStories, findArticle, filteredArticles }) => {
                 if (!story.title.includes('%')) {
                 return (
                     <Link to={`/${story.title.split(' ').join('_')}`} key={index} className='thumbnail-card' onClick={() => findArticle(story.title)}>
-                        <h3 className='list-title'>{story.title}</h3>
+                        <h3 data-cy='list-title' className='list-title'>{story.title}</h3>
                         <img className='thumbnail' src={story.multimedia[0].url} alt=''/>
                         <p className='published'> Published: {story.published_date.split('T')[0]}</p>
                     </Link>
