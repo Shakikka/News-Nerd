@@ -1,8 +1,10 @@
 .details-card {
     display: flex;
     flex-direction: column;
-    background: #d999fc;
     margin-top: 40px;
+    width: 750px;
+    min-width: 300px;
+    align-self: center;
 }
 
 .image-box {
@@ -16,7 +18,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .image-box, .details-image {
+    .image-box, .details-image, .details-card {
         width: 300px;
     }
 

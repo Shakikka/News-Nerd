@@ -1,5 +1,5 @@
 import './ArticleDetails.css';
-import { AiOutlineRollback } from "react-icons/ai";
+import { IoArrowBackCircle } from "react-icons/io5";
 
 const ArticleDetails = ({ foundArticle }) => {
 
@@ -8,12 +8,12 @@ const ArticleDetails = ({ foundArticle }) => {
     const caption = foundArticle.multimedia[0].caption
     return (
         <div className='details-card'>
-            <AiOutlineRollback/>
-            <h2>{foundArticle.title}</h2>
+            <IoArrowBackCircle className='back-button'/>
             <div className='image-box'>
                 <img className='details-image' src={image} alt={caption}/>
                 <p>{caption}</p>
             </div>
+            <h2>{foundArticle.title}</h2>
         </div>
     )
 }
