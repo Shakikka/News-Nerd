@@ -1,0 +1,30 @@
+{
+    "results": [
+        {
+           "abstract": "Not only do people need to behave with integrity and benevolence, they need to develop the skills to make people feel respected and safe.",
+           "byline": "By David Brooks",
+           "multimedia":[
+               {
+                   "caption": "They did it again...",
+                   "url": "https://static01.nyt.com/images/2021/06/10/opinion/10brooks-lead/10brooks-lead-superJumbo.jpg"
+               }
+           ],
+           "published_date": "2021-06-10T19:30:03-04:00",
+           "title": "How to Build Trust: A Practical Guide",
+           "url": "https://www.nytimes.com/2021/06/10/opinion/distrust-respect-safety.html"
+        },
+        {
+            "abstract": "A fan of crime novels, the former police commissioner loves Michael Connelly’s hero Harry Bosch — but adds, “I don’t have a favorite villain.”",
+            "byline": "By Marvin Blemsfield",
+            "multimedia": [
+                {
+                    "caption": "Oh boy...",
+                    "url": "https://static01.nyt.com/images/2021/06/13/books/review/13ByTheBook/13ByTheBook-superJumbo.jpg"
+                }
+            ],
+            "published_date": "2021-06-10T07:21:32-04:00",
+            "title": "Bill Bratton Doesn’t Root for the Bad Guys",
+            "url": "https://www.nytimes.com/2021/06/10/books/review/bill-bratton-by-the-book-interview.html"
+        }
+    ]
+}
