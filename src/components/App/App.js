@@ -49,6 +49,7 @@ const App = () => {
         <Route exact path='/:title'>
           <ArticleDetails 
             image={foundArticle.multimedia} 
+            publishDate={foundArticle.published_date.split('T')[0]}
             caption={foundArticle.multimedia}
             title={foundArticle.title}
             by={foundArticle.byline}
