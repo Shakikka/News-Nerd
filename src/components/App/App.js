@@ -17,7 +17,6 @@ const App = () => {
     getNews()
       .then(news => {
         setTopStories(news.results)
-        console.log(news.results)
       })
       .catch(error => console.log(error))
   }, [])
