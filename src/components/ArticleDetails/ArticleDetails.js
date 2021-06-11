@@ -1,5 +1,6 @@
 import './ArticleDetails.css';
 import { IoArrowBackCircle } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 const ArticleDetails = ({ foundArticle }) => {
 
@@ -8,7 +9,9 @@ const ArticleDetails = ({ foundArticle }) => {
     const caption = foundArticle.multimedia[0].caption
     return (
         <div className='details-card'>
-            <IoArrowBackCircle className='back-button'/>
+            <Link to='/' className='back-button'>
+                <IoArrowBackCircle className='back-button'/>
+            </Link>
             <div className='image-box'>
                 <img className='details-image' src={image} alt={caption}/>
                 <p>{caption}</p>

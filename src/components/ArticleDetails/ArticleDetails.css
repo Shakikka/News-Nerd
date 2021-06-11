@@ -17,6 +17,11 @@
     width: 700px;
 }
 
+.back-button {
+    height: 25px;
+    width: 25px;
+}
+
 @media screen and (max-width: 600px) {
     .image-box, .details-image, .details-card {
         width: 300px;
