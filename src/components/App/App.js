@@ -4,11 +4,12 @@ import { getNews } from '../../apiCalls';
 import Header from '../Header/Header';
 import ArticleList from '../ArticleList/ArticleList';
 import ArticleDetails from '../ArticleDetails/ArticleDetails';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, useLocation } from 'react-router-dom';
 
 const App = () => {
 
   const [topStories, setTopStories] = useState([])
+  const location = useLocation().pathname.split('_').join(' ').split('/')[1]
   
   useEffect(() => {
     getNews()
@@ -20,7 +21,7 @@ const App = () => {
   }, [])
 
   const getArticle = title => {
-    topStories.find(story => story.title === title)
+    return topStories.find(story => story.title === title)
   }
 
   return (
@@ -31,7 +32,7 @@ const App = () => {
           <ArticleList topStories={topStories}/>
         </Route>
         <Route exact path='/:title'>
-          <ArticleDetails articleDetails={getArticle}/>
+          <ArticleDetails foundArticle={getArticle(location)}/>
         </Route>
       </Switch> 
     </div>
