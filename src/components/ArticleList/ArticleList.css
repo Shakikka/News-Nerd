@@ -3,6 +3,10 @@
     width: 300px;
 }
 
+.published {
+    font-size: 11px;
+}
+
 /* ArticleList {
     display: grid;
     grid-template: repeat(auto) / repeat(auto);

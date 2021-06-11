@@ -9,9 +9,9 @@ const ArticleList = ({ topStories }) => {
                 if (!story.title.includes('%')) {
                 return (
                     <Link to={`/${story.title.split(' ').join('_')}`} key={index}>
-                        <img className='thumbnail' src={story.multimedia[0].url} alt=''/>
                         <p>{story.title}</p>
-                        <p>Published: {story.published_date.split('T')[0]}</p>
+                        <img className='thumbnail' src={story.multimedia[0].url} alt=''/>
+                        <p className='published'> Published: {story.published_date.split('T')[0]}</p>
                     </Link>
                 )}
             })}

@@ -22,6 +22,10 @@
     width: 25px;
 }
 
+.by, .caption {
+    font-size: 15px;
+}
+
 @media screen and (max-width: 600px) {
     .image-box, .details-image, .details-card {
         width: 300px;
