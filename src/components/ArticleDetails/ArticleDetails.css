@@ -27,6 +27,17 @@
     font-size: 15px;
 }
 
+.abstract {
+    font-size: 20px;
+}
+
+.full-link {
+    margin-bottom: 30px;
+    background: #3fefff;
+    width: 200px;
+    align-self: center;
+}
+
 @media screen and (max-width: 600px) {
     .image-box, .details-image, .details-card {
         width: 300px;

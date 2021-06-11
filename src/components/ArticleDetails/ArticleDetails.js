@@ -18,6 +18,8 @@ const ArticleDetails = ({ foundArticle }) => {
                 <img className='details-image' src={image} alt={caption}/>
                 <p className='caption'>{caption}</p>
             </div>
+            <h3 className='abstract'>{foundArticle.abstract}</h3>
+            <a className='full-link' href={foundArticle.url}>Find the Full Article Here!</a>
         </div>
     )
 }
