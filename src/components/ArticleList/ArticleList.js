@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const ArticleList = ({ topStories }) => {
     return (
-        <div>
-            <h2>Top Stories</h2>
+        <div className='top-stories-container'>
+            <h2 className='top-stories'>Top Stories</h2>
             {topStories && topStories.map((story, index) => {
                 if (!story.title.includes('%')) {
                 return (

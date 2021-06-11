@@ -12,7 +12,7 @@ const ArticleDetails = ({ foundArticle }) => {
             <Link to='/' className='back-button'>
                 <IoArrowBackCircle className='back-button'/>
             </Link>
-            <h2>{foundArticle.title}</h2>
+            <h2 className='title'>{foundArticle.title}</h2>
             <p className='by'>{foundArticle.byline}</p>
             <div className='image-box'>
                 <img className='details-image' src={image} alt={caption}/>
