@@ -8,8 +8,10 @@ const ArticleDetails = ({ foundArticle }) => {
     return (
         <div className='details-card'>
             <h2>{foundArticle.title}</h2>
-            <img className='details-image' src={image} alt={caption}/>
-            <p>{caption}</p>
+            <div className='image-box'>
+                <img className='details-image' src={image} alt={caption}/>
+                <p>{caption}</p>
+            </div>
         </div>
     )
 }

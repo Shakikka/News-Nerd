@@ -1,3 +1,15 @@
+.details-card {
+    display: flex;
+    flex-direction: column;
+    background: #d999fc;
+    margin-top: 40px;
+}
+
+.image-box {
+    width: 700px;
+    align-self: center;
+}
+
 .details-image {
     height: 500px;
     width: 700px;
