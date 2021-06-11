@@ -20,15 +20,6 @@ const App = () => {
       .catch(error => console.log(error))
   }, [])
 
-  const findNews = () => {
-    getNews()
-      .then(news => {
-        setTopStories(news.results)
-        console.log(news.results)
-      })
-      .catch(error => console.log(error))
-  }
-
   const getArticle = title => {
     return topStories.find(story => story.title === title)
   }
