@@ -27,8 +27,8 @@ const App = () => {
     setFoundArticle(foundArticle)
   }
 
-  const searchArticles = () => {
-    const filteredArticles = topStories.filter(article => article.title.includes(e.target.value))
+  const searchArticles = e => {
+    const filteredArticles = topStories.filter(article => article.title.toLowerCase().includes(e.target.value.toLowerCase()))
     setFilteredArticles(filteredArticles)
   }
 
@@ -37,11 +37,15 @@ const App = () => {
       <Header/>
       <Switch>
         <Route exact path='/'>
-          <Search/>
+          <Search 
+            searchArticles={searchArticles}
+            setFilteredArticles={setFilteredArticles}
+          />
           <ArticleList 
             topStories={topStories} 
             filteredArticles={filteredArticles} 
-            findArticle={findArticle}/>
+            findArticle={findArticle}
+            />
         </Route>
         <Route exact path='/:title'>
           <ArticleDetails 

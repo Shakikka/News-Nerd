@@ -1,7 +1,12 @@
 import './ArticleList.css';
 import { Link } from 'react-router-dom';
 
-const ArticleList = ({ topStories, findArticle }) => {
+const ArticleList = ({ topStories, findArticle, filteredArticles }) => {
+    
+    if (filteredArticles.length) {
+        topStories = filteredArticles
+    }
+    
     return (
         <div className='top-stories-container'>
             <h2 className='top-stories'>Top Stories</h2>

@@ -1,7 +1,7 @@
 import './Search.css';
 import { useState } from 'react';
 
-const Search = ({ searchArticles }) => {
+const Search = ({ searchArticles, setFilteredArticles }) => {
 
     const [searchTerm, setSearchTerm] = useState('')
 
@@ -10,13 +10,14 @@ const Search = ({ searchArticles }) => {
         searchArticles(e)
     }
 
-    handleSubmit = e => {
+    const handleSubmit = e => {
         e.preventDefault()
-        this.clearInput()
+        clearInput()
     }
 
-    clearInput = () => {
+    const clearInput = () => {
         setSearchTerm('')
+        setFilteredArticles([])
     }
 
     return (
@@ -28,9 +29,9 @@ const Search = ({ searchArticles }) => {
                 type='text'
                 placeholder='Enter Search Term'
                 value={searchTerm}
-                onChange={this.handleChange}
+                onChange={handleChange}
             />
-            <button onClick={handleChange}>Search</button>
+            <button onClick={handleSubmit}>Clear</button>
         </form>
     )
 }
