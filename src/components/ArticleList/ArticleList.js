@@ -1,22 +1,21 @@
 import './ArticleList.css';
+import { Link } from 'react-router-dom';
 
 const ArticleList = ({ topStories }) => {
     return (
-        <>
-            <h2>Top Stories</h2>
+        <div className='top-stories-container'>
+            <h2 className='top-stories'>Top Stories</h2>
             {topStories && topStories.map((story, index) => {
+                if (!story.title.includes('%')) {
                 return (
-                    <div key={index}>
+                    <Link to={`/${story.title.split(' ').join('_')}`} key={index} className='thumbnail-card'>
+                        <h3>{story.title}</h3>
                         <img className='thumbnail' src={story.multimedia[0].url} alt=''/>
-                        <p>{story.title}</p>
-                        <p>{story.byline}</p>
-                        <p>{story.published_date}</p>
-                        <p>{story.abstract}</p>
-
-                    </div>
-                )
+                        <p className='published'> Published: {story.published_date.split('T')[0]}</p>
+                    </Link>
+                )}
             })}
-        </>
+        </div>
     )
 }
 
