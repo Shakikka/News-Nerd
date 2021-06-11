@@ -19,6 +19,7 @@ const ArticleList = ({ topStories, findArticle, filteredArticles }) => {
                         <p className='published'> Published: {story.published_date.split('T')[0]}</p>
                     </Link>
                 )}
+                return <h2>Something went wrong</h2>
             })}
         </div>
     )

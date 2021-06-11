@@ -21,7 +21,6 @@ const App = () => {
     getNews()
       .then(news => {
         setTopStories(news.results)
-        console.log(news)
       })
       .catch(error => console.log(error))
   }
@@ -60,8 +59,6 @@ const App = () => {
             by={foundArticle.byline}
             abstract={foundArticle.abstract}
             url={foundArticle.url}
-            // gatherArticles={gatherArticles}
-            // findArticle={findArticle}
             />
         </Route>
       </Switch> 
