@@ -1,4 +1,5 @@
 import './ArticleDetails.css';
+import { AiOutlineRollback } from "react-icons/ai";
 
 const ArticleDetails = ({ foundArticle }) => {
 
@@ -7,6 +8,7 @@ const ArticleDetails = ({ foundArticle }) => {
     const caption = foundArticle.multimedia[0].caption
     return (
         <div className='details-card'>
+            <AiOutlineRollback/>
             <h2>{foundArticle.title}</h2>
             <div className='image-box'>
                 <img className='details-image' src={image} alt={caption}/>
