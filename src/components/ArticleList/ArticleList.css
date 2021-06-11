@@ -5,15 +5,21 @@
 
 .published {
     font-size: 11px;
+    border-bottom: solid #3fefff;
+    width: 400px;
 }
-
-/* ArticleList {
-    display: grid;
-    grid-template: repeat(auto) / repeat(auto);
-} */
 
 a {
     font-weight: bold;
     text-decoration: none;
     color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .published {
+        width: 300px;
+    }
 }
