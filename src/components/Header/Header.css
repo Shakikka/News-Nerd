@@ -9,6 +9,9 @@ header {
     font-family: 'Viaoda Libre', cursive;
 }
 
+h1 {
+    border-bottom: solid #d999fc;
+}
 .news-icon {
     height: 75px;
     width: 75px;
